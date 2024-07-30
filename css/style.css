@@ -179,7 +179,7 @@ h1::after {
 }
 .roles {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     position: relative;
 }
 .roles-hr {
@@ -219,6 +219,7 @@ footer {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 999px;
+    margin-top: 30px;
 }
 
 .footer-logo {
