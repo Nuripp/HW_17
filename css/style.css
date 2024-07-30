@@ -1,3 +1,4 @@
+/* Header section*/
 h1, h2 {
     font-family: "Passion One", sans-serif;
     font-weight: 400;
@@ -93,15 +94,26 @@ nav .active{
     background-color: #F9F98E;
     text-align: center;
 }
+
+/* HeroImg section */
 .heroImg {
     height: auto;
     padding: 30px;
     margin-top: 180px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .content {
-    width: 500px;
     margin: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 100%;
 }
 .left {
     float: left;
@@ -109,6 +121,7 @@ nav .active{
     flex: 1;
     max-width: 300px;
     margin-top: 40px;
+    margin-right: 20px;
 }
 h1 {
     position: relative;
@@ -128,6 +141,40 @@ h1::after {
     z-index: -1;
     box-shadow: 0 5px 0 0 #f9f98e;
 }
+.quote-left, .quote-right {
+    font-size: 80px;
+    position: absolute;
+    color: black;
+}
+.quote-left {
+    left: -80px;
+    top: 0;
+    font-family: "Passion One", sans-serif;
+    position: absolute;
+    z-index: 1;
+}
+.quote-right {
+    right: -60px;
+    bottom: 100px;
+    left: 580px;
+    font-family: "Passion One", sans-serif;
+}
+.text-content {
+    position: relative;
+    z-index: 1;
+    max-width: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+.text-content h2 {
+    margin: 0;
+    margin-top: 20px;
+
+}
+.text-content p {
+    line-height: 1.7;
+    font-size: 20px;
+}
 .button {
     display: inline-block;
     text-decoration: none;
@@ -143,33 +190,10 @@ h1::after {
 .button:hover {
     transform: scale(1.05);
 }
-.heroImg {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    align-items: flex-start;
-    max-width: 1000px;
-    width: 100%;
-}
 .text-section {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-}
-.left {
-    margin-right: 20px;
-}
-.text-content {
-    max-width: 2000px;
-    display: flex;
-    flex-direction: column;
 }
 .button-section {
     text-align: center;
@@ -179,7 +203,7 @@ h1::after {
 }
 .roles {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
 }
 .roles-hr {
@@ -200,13 +224,17 @@ h1::after {
     background-color: #EEEEEE;
     border: 1px solid #777777;
     border-radius: 999px;
+    font-size: 18px;
 }
 .roles-text {
     position: relative;
     display: inline-block;
     background-color: white;
     padding: 0 20px;
+    font-size: 18px;
 }
+
+/* Footer section*/
 footer {
     display: flex;
     flex-direction: column;
