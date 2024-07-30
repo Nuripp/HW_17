@@ -1,3 +1,26 @@
+h1, h2 {
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+}
+.navigation-text {
+    font-size: 22px;
+    font-weight: 400;
+}
+.navigation-text-active {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 .inline-block {
     vertical-align: top;
     align-items: center;
@@ -35,7 +58,7 @@ nav li:first-child {
     text-align: center;
     vertical-align: middle;
     flex: 0 0 auto;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 nav {
     display: flex;
@@ -48,13 +71,13 @@ nav ul {
     list-style: none;
     padding: 0;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 1%;
     vertical-align: middle;
     list-style-type: none;
     margin: 0;
     overflow: hidden;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 999px;
 }
 nav li {
@@ -69,7 +92,6 @@ nav li {
 nav .active{
     background-color: #F9F98E;
     text-align: center;
-    font-weight: bold;
 }
 .heroImg {
     height: auto;
@@ -78,7 +100,7 @@ nav .active{
     position: relative;
 }
 .content {
-    width: 800px;
+    width: 500px;
     margin: center;
 }
 .left {
@@ -86,6 +108,7 @@ nav .active{
     padding-right: 80px;
     flex: 1;
     max-width: 300px;
+    margin-top: 40px;
 }
 h1 {
     position: relative;
@@ -188,24 +211,20 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1200px;
+    justify-content: space-around;
+    max-width: 1000px;
     width: 60%;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 999px;
 }
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
+
 .footer-logo {
     max-width: 0px;
     margin-right: 0px;
+    margin-left: 40px;
 }
 .footer-menu {
     display: flex;
@@ -214,8 +233,8 @@ footer {
     padding: 0;
     margin: 20px 10px;
     margin-right: 0px;
-    border-right: 1px solid #777777; /* 구분선 */
-    padding-right: 120px;
+    border-right: 1px solid #777777;
+    padding-right: 80px;
 }
 .footer-menu li {
     margin: 10px 0;
@@ -234,7 +253,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    margin-left: -130px;
+    margin-left: -150px;
     margin-right: 20px;
 }
 .info-section {
@@ -253,12 +272,25 @@ footer {
     display: flex;
     align-items: center;
 }
+.phone a, .email a {
+    padding-left: 30px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+}
+.phone-img, .email-img {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
 .nyc-image {
     max-width: 100px;
     margin-top: -30px;
+    margin-right: 40px;
 }
 .footer-bottom {
     text-align: center;
+    font-size: 14px;
 }
 .footer-bottom p {
     margin: 0;
